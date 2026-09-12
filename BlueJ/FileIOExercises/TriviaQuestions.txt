@@ -1,0 +1,6 @@
+Bayridge;What is Bayridge's Street Name?;Taylor-Kidd Blvd;Strand Blvd;Ashton Place;Hwy 401
+Bayridge;What is Mr. Swaine's middle name?;William;Jesse;Jonathan;Danger
+Bayridge;What is Bayridge SS's postal code?;K7M 6J9;K8M 9R4;K6B 3N1;K7P 2K1
+Hockey;Who scored the first goal in PWHL history?;Ella Shelton;Marie Philip-Poulin;Hayley Wickenheiser;Sarah Nurse
+Hockey;How many goals is the most in a season in the NHL?;92;109;88;56
+Hockey;What Bayridge student is going to Eastern Michigan next year for hockey?;Mya Berezny;Zac Vandermeer;Mac McCaw;Wayne Gretzky

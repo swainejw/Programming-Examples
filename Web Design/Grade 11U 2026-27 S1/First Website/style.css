@@ -1,0 +1,157 @@
+body {
+    background-color:aquamarine;
+    font-family: "Kranky", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    color: rgb(62, 6, 6);
+}
+
+th {
+    font-size: xx-large;
+}
+
+header {
+    height: 175px;
+    background-color: rgb(23,61,170);
+    background-image: url("headerImage.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(20, 14, 75);
+}
+
+a {
+    color:cyan;
+}
+
+a:visited {
+    color:#8ce715;
+}
+
+.container {
+    width: 90%;
+    border: double;
+    border-color:rgb(95, 60, 5);
+    margin: 0 auto;
+    background-color:rgb(63, 2, 2);
+    color:aliceblue;
+}
+
+main {
+    padding: 10px;
+}
+
+/* Navigation Bar */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111111;
+}
+
+/* Flexboxes */
+
+.flex-container-A {
+  display: flex;
+  background-color: rgb(70, 75, 81);
+  width: 50%;
+  margin-left: auto;
+}
+
+.flex-container-A div {
+  background-color: #c03838;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.flex-container-B {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(23, 209, 101);
+}
+
+.flex-container-B div {
+  background-color: #b8cfbe;
+  margin: 50px;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.flex-container-C {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(209, 23, 203);
+}
+
+.flex-container-C div {
+  background-color: #8ce715;
+  margin: 10px;
+  padding: 0px;
+  font-size: 30px;
+}
+
+.flex-container-D {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(31, 1, 13);
+}
+
+.flex-container-D div {
+  width: 33%;
+  background-color: #f0f4ea;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+/* Contact me form */
+
+form {
+    width: 400px;
+    margin: auto;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: steelblue;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: navy;
+}

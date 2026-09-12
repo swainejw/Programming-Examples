@@ -1,0 +1,34 @@
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Java compiled files
+*.class
+
+# BlueJ
+*.ctxt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Build/output folders
+bin/
+out/
+build/
+dist/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*~
