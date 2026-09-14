@@ -1,8 +1,12 @@
 body {
-    background-color:rgb(247, 206, 129);
+    background-color:aquamarine;
     font-family: "Kranky", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+p {
+    color: rgb(62, 6, 6);
 }
 
 th {
@@ -23,11 +27,11 @@ footer {
 }
 
 a {
-    color:rgb(23, 134, 134);
+    color:cyan;
 }
 
 a:visited {
-    color:#f49c04;
+    color:#8ce715;
 }
 
 .container {
@@ -35,8 +39,8 @@ a:visited {
     border: double;
     border-color:rgb(95, 60, 5);
     margin: 0 auto;
-    background-color:rgb(212, 255, 255);
-    color:rgb(3, 19, 32);
+    background-color:rgb(63, 2, 2);
+    color:aliceblue;
 }
 
 main {

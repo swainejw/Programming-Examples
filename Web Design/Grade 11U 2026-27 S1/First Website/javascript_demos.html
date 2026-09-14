@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mr. Swaine's Javascript Examples</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kranky&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+</head>
+<body>
+    <div class="container">
+      <header></header>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="flexbox.html">Flexboxes</a></li>
+          <li><a href="contact.html">HTML Forms</a></li>
+          <li><a href="javascript_demos.html">Javascript Demos</a></li>
+        </ul>
+      </nav>
+
+      <main>
+
+        <h1>Amazing Applications of Javascript</h1>
+
+        <hr>
+        
+        <h2>Switching Between Some Canadian Hockey Logos</h2>
+
+        <img id="logo" height="300px" src="leafs.png"><br>
+        <button onclick="changeLogo()">Change Logo</button>
+
+        <hr>
+
+        <h2>Changing the Color of the Background</h2>
+        <button onclick="changeColor()">Change Background</button>
+        
+        <hr>
+
+        <h2>Roll the Dice</h2>
+        <button onclick="rollDice()">Roll</button>
+        <p id="result"></p>
+
+        <h2>Get Your Random Phrase</h2>
+        <button onclick="pickPhrase()">Random Phrase</button>
+        <p id="phraseDisplay"></p>
+
+      </main>
+
+      <footer></footer>
+    </div>
+
+    
+
+</body>
+</html>
