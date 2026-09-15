@@ -1,5 +1,4 @@
 // switching logos
-
 const logos = ["leafs.png", "habs.png","sens.png"];
 let currentLogo = 0;
 
@@ -26,6 +25,20 @@ function changeColor() {
 
     if (current >= colors.length) {
         current = 0;
+    }
+}
+
+// changing background image
+
+const images = ["tileBrick2.png", "tileBrick3.png", "tileBrick1.png"];
+let x = 0;
+
+function changeBGImage() {
+    document.body.style.backgroundImage = "url('" + images[x] + "')";
+
+    x++;
+    if (x >= images.length) {
+        x = 0;
     }
 }
     
