@@ -1,5 +1,5 @@
 // switching logos
-const logos = ["images/leafs.png", "habs.png","sens.png"];
+const logos = ["images/leafs.png", "images/habs.png","images/sens.png"];
 let currentLogo = 0;
 
 function changeLogo() {
@@ -30,7 +30,7 @@ function changeColor() {
 
 // changing background image
 
-const images = ["tileBrick2.png", "tileBrick3.png", "tileBrick1.png"];
+const images = ["images/tileBrick2.png", "images/tileBrick3.png", "images/tileBrick1.png"];
 let x = 0;
 
 function changeBGImage() {

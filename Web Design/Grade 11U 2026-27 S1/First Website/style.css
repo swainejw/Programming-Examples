@@ -3,7 +3,7 @@ body {
     font-family: "Kranky", serif;
     font-weight: 400;
     font-style: normal;
-    background-image:url("tileBrick1.png");
+    background-image:url("images/tileBrick1.png");
     background-repeat:repeat;
 }
 
@@ -14,7 +14,7 @@ th {
 header {
     height: 175px;
     background-color: rgb(23,61,170);
-    background-image: url("headerImage.png");
+    background-image: url("images/headerImage.png");
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -71,6 +71,10 @@ nav ul li a:hover {
     background-color: #111111;
 }
 
+textarea {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blue;
+}
 /* Flexboxes */
 
 .flex-container-A {
