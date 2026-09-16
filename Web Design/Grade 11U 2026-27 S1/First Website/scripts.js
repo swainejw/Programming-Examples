@@ -1,5 +1,5 @@
 // switching logos
-const logos = ["leafs.png", "habs.png","sens.png"];
+const logos = ["images/leafs.png", "habs.png","sens.png"];
 let currentLogo = 0;
 
 function changeLogo() {
