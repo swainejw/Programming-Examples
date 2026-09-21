@@ -32,6 +32,15 @@ a:visited {
     color:#f49c04;
 }
 
+a:hover {
+    color: rgb(247, 0, 255);
+    font-size:larger;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
 .container {
     width: 90%;
     border: double;
