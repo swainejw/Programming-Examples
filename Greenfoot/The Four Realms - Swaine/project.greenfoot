@@ -1,11 +1,14 @@
 #Greenfoot project file
 class.Hero.image=hedgehog.png
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+dependency1.from=MyWorld
+dependency1.to=Hero
+dependency1.type=UsesDependency
+editor.fx.0.height=630
+editor.fx.0.width=800
+editor.fx.0.x=356
+editor.fx.0.y=33
 height=629
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=2
 project.charset=UTF-8
 publish.hasSource=false
@@ -38,5 +41,5 @@ target2.y=0
 version=3.1.0
 width=1280
 world.lastInstantiated=MyWorld
-xPosition=0
-yPosition=30
+xPosition=116
+yPosition=33
