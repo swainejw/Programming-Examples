@@ -37,9 +37,8 @@ a:hover {
     font-size:larger;
 }
 
-/* this makes the image scale when hovered over */
 img:hover {
-    transform: scale(1.6);
+    transform: scale(1.05);
 }
 
 .container {
