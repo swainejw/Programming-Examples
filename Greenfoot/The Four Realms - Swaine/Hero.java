@@ -9,6 +9,11 @@ public class Hero extends Actor
     boolean doneTyping = false;
     boolean doneBoss = false;
     
+    public Hero() // constructor - runs as soon as the hero is put into the world
+    {
+        getImage().scale(40,70);
+    }
+    
     public void act()
     {
         movement();
