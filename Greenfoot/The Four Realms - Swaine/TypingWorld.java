@@ -7,7 +7,7 @@ public class TypingWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        addObject(new Hero(), 300, 350);
+        addObject(Globals.h, 300, 350);
     }
     
     public void act()

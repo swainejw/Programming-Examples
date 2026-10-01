@@ -11,6 +11,7 @@ public class Fireball extends Actor
         if (getY() > getWorld().getHeight() - 5)
         {
             getWorld().removeObject(this);
+            return;
         }
         
         Hero h = (Hero) getOneIntersectingObject(Hero.class);

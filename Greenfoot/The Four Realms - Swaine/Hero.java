@@ -38,6 +38,11 @@ public class Hero extends Actor
         {
             setLocation(getX(), getY() - speed);
         }
+        
+        else if (Greenfoot.isKeyDown("space"))
+        {
+            getWorld().addObject(new HeroBullet(), getX(), getY());
+        }
     }
     
     public void checkWorldBoundaries()
