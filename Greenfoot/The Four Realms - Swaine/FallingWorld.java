@@ -13,7 +13,7 @@ public class FallingWorld extends World
     
     public void act()
     {
-        if (t.millisElapsed() > 4000)
+        if (t.millisElapsed() > 2000)
         {
             addObject(new Fries(), Greenfoot.getRandomNumber(getWidth()), 0);
             t.mark();
