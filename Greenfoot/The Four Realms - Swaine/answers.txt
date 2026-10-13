@@ -1,0 +1,100 @@
+Ottawa;Toronto;Vancouver;Montreal
+Ontario;Alberta;Manitoba;Saskatchewan
+Mackenzie River;St. Lawrence River;Fraser River;Yukon River
+Beaver;Moose;Polar Bear;Goose
+1867;1812;1905;1982
+English and French;English and Spanish;French and German;English and German
+Vancouver;Calgary;Toronto;Montreal
+Quebec;Ontario;British Columbia;Alberta
+Atlantic;Pacific;Arctic;Indian
+King Charles III;Prime Minister;Governor General;Premier
+Copenhagen;Aarhus;Odense;Aalborg
+Greenland;Iceland;Faroe Islands;Bornholm
+Krone;Euro;Pound;Dollar
+Tivoli Gardens;Legoland;Bakken Zoo;Copenhagen Mall
+Kattegat;North Sea;Baltic Gulf of Finland;Black Sea
+Red and White;Blue and Yellow;Red and Blue;Green and White
+Danish;Swedish;Norwegian;German
+Hans Christian Andersen;Astrid Lindgren;Roald Dahl;Henrik Ibsen
+Wind Turbines;Oil;Coal;Natural Gas
+Mollehoj;Himmelbjerget;Ejer Bavnehoj;Yding Skovhoj
+Rome;Milan;Venice;Naples
+Apennines;Alps;Pyrenees;Carpathians
+Boot;Triangle;Hexagon;Circle
+Euro;Dollar;Pound;Franc
+Roman Empire;Byzantine Empire;Ottoman Empire;Persian Empire
+Leaning Tower of Pisa;Eiffel Tower;Big Ben;Colosseum
+Venice;Florence;Naples;Turin
+Sicily;Sardinia;Corsica;Elba
+Mount Vesuvius;Mount Etna;Stromboli;Fuji
+Green White Red;Red White Blue;Blue Yellow Red;Black Yellow Red
+Madrid;Barcelona;Seville;Valencia
+Spanish;Portuguese;Italian;French
+Euro;Peso;Dollar;Franc
+Pablo Picasso;Salvador Dali;Vincent van Gogh;Claude Monet
+La Roja;The Bulls;Red Eagles;Iberians
+Barcelona;Madrid;Seville;Granada
+Mediterranean Sea;Adriatic Sea;Black Sea;Red Sea
+Catalonia;Andalusia;Galicia;Basque Country
+Running of the Bulls;Tomato Toss;Camel Race;Water Festival
+Red and Yellow;Blue and White;Green and Yellow;Black and Red
+Tokyo;Osaka;Kyoto;Nagoya
+Honshu;Hokkaido;Shikoku;Kyushu
+Yen;Won;Yuan;Dollar
+Mount Fuji;Mount Aso;Mount Haku;Mount Takao
+Tokyo;Osaka;Kyoto;Sapporo
+Origami;Ikebana;Bonsai;Calligraphy
+Shinkansen;Metro Bullet Bus;Skyrail;Expressway
+Pacific;Atlantic;Indian;Arctic
+Sumo;Baseball;Soccer;Rugby
+Cherry Blossom;Rose;Tulip;Lotus
+Prince Edward Island;Newfoundland;Nova Scotia;New Brunswick
+Toronto;Ottawa;Hamilton;London
+Calgary;Edmonton;Regina;Winnipeg
+Great Bear Lake;Great Slave Lake;Lake Winnipeg;Lake Athabasca
+Niagara Falls;Victoria Falls;Angel Falls;Iguazu Falls
+Nunavut;Yukon;Northwest Territories;Alberta
+Victoria;Vancouver;Kelowna;Nanaimo
+Canada Day;Victoria Day;Family Day;Labour Day
+Nunavut;Yukon;Ontario;Quebec
+Toronto;Ottawa;Vancouver;Calgary
+Oresund Bridge;Golden Gate Bridge;Tower Bridge;Confederation Bridge
+Nuuk;Copenhagen;Reykjavik;Torshavn
+Dannebrog;Union Jack;Tricolor;Stars and Stripes
+LEGO;Ikea;Nokia;Mattel
+Skagerrak;English Channel;Bosporus;Gibraltar
+Aarhus;Odense;Aalborg;Esbjerg
+Cycling;Running;Skiing;Sailing
+Red;Blue;Green;Yellow
+The Little Mermaid;Cinderella;Snow White;Rapunzel
+NATO;UN;EU;ASEAN
+Vatican City;San Marino;Malta;Monaco
+Pompeii;Herculaneum;Troy;Carthage
+Milan;Rome;Naples;Palermo
+Adriatic Sea;Mediterranean Sea;Tyrrhenian Sea;Ionian Sea
+Pizza;Pasta;Risotto;Gelato
+Leonardo da Vinci;Michelangelo;Raphael;Donatello
+Colosseum;Pantheon;Forum;Acropolis
+Strait of Messina;Strait of Gibraltar;Bosporus;Dardanelles
+Rome;Milan;Florence;Venice
+ITA Airways;Alitalia;Ryanair;EasyJet
+Granada;Madrid;Toledo;Seville
+Pyrenees;Alps;Apennines;Carpathians
+Canary Islands;Balearic Islands;Azores;Madeira
+Flamenco;Tango;Salsa;Waltz
+Cortes Generales;Senate of Rome;Bundestag;Parliament of Catalonia
+Barcelona;Madrid;Valencia;Seville
+Mediterranean Sea;Atlantic Ocean;Black Sea;Baltic Sea
+Ferdinand Magellan;Christopher Columbus;Vasco da Gama;James Cook
+Royal Palace of Madrid;Alhambra;Escorial;Alcazar
+Paella;Risotto;Sushi;Poutine
+Kyoto;Tokyo;Osaka;Nara
+Kimono;Hanbok;Cheongsam;Sari
+Nintendo;Sony;Sega;Capcom
+National Diet;Congress;Parliament;Assembly
+Hiroshima;Nagasaki;Kyoto;Osaka
+Sea of Japan;Yellow Sea;East China Sea;Bering Sea
+Honshu;Hokkaido;Kyushu;Shikoku
+Sake;Tea;Coffee;Juice
+Ikebana;Origami;Bonsai;Kendo
+Sony;Nintendo;Sega;Microsoft

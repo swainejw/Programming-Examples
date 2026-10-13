@@ -1,41 +1,44 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Collections;
+import java.io.File;
+import java.io.IOException;
 
 public class Wizard extends Actor
 {
     String name = "Gandalf the Grey";
     
-    Label l = new Label("", 60);
+    Label l = new Label("", 20);
     public static Counter timeShow = new Counter();
     
     ArrayList<String> questions = new ArrayList<String>();
-    ArrayList<String> answers = new ArrayList<String>();
+    ArrayList<String[]> answers = new ArrayList<String[]>();
 
     public Wizard()
     {
         getImage().scale(100, 100);
         
-        questions.add("What is the name of the wizard who guides Frodo on his quest?");
-        questions.add("What is the name of Frodo's loyal gardener and best friend?");
-        questions.add("What race is Legolas?");
-        questions.add("What is the name of the dark lord who created the One Ring?");
-        questions.add("In which land does most of The Lord of the Rings begin?");
-        questions.add("What is the name of Aragorn's sword that was reforged from Narsil?");
-        questions.add("What creature says 'My precious' when referring to the One Ring?");
-        questions.add("What is the name of the fiery demon Gandalf fights in Moria?");
-        questions.add("Which mountain must the One Ring be destroyed in?");
-        questions.add("What city do Aragorn and his allies defend during the Battle of the Pelennor Fields?");
-    
-        answers.add("Gandalf");
-        answers.add("Samwise Gamgee");
-        answers.add("Elf");
-        answers.add("Sauron");
-        answers.add("The Shire");
-        answers.add("Anduril");
-        answers.add("Gollum");
-        answers.add("Balrog");
-        answers.add("Mount Doom");
-        answers.add("Minas Tirith");
+        try 
+        {
+            Scanner inputQ = new Scanner(new File("questions.txt"));
+            while (inputQ.hasNextLine())
+            {
+                questions.add(inputQ.nextLine());
+            }
+            inputQ.close();
+        
+            Scanner inputA = new Scanner(new File("answers.txt"));
+            while (inputA.hasNextLine())
+            {
+                answers.add(inputA.nextLine().split(";"));
+            }
+            inputA.close();
+        }
+        catch (IOException e)
+        {
+            System.out.println("Something went wrong with reading Q/A files.");
+        }
     }
     
     public void act()
@@ -45,19 +48,51 @@ public class Wizard extends Actor
         
         if (h != null && timeShow.getValue() > 80)
         {
-            
+            // Pick random question and get corresponding answer and 
+            // possible answers
             int rn = Greenfoot.getRandomNumber(questions.size());
-            String q = questions.get(rn);
-            String a = answers.get(rn);
-            String ua = Greenfoot.ask(q);
-            if (ua.matches(a))
+            String question = questions.get(rn);
+            String[] options = answers.get(rn);
+            
+            // Correct answer BEFORE shuffling
+            String correctAnswer = options[0];
+            // Copy to an ArrayList so we can easily SHUFFLE
+            ArrayList<String> shuffled = new ArrayList<String>();
+            for (String s : options)
             {
-                l.setValue("CORRECT");
+                shuffled.add(s);
+            }
+            // Use the built-in shuffle feature in the Collections library
+            Collections.shuffle(shuffled);
+            // Find the index of the correct answer
+            int correctIndex = shuffled.indexOf(correctAnswer);
+            
+            // Formatting
+            int x = 1;
+            String a = "\nChoose from:\n";
+            for (String s : shuffled)
+            {
+                a += x + ". " + s + "\n";
+                x++;
+            }
+            
+            String wizardQuestion = question + a;
+            String[] possibleAnswers = answers.get(rn);
+            String ua = Greenfoot.ask(wizardQuestion);
+            
+            // Check and display
+            l.setValue("");
+            if (ua.equals("" + (correctIndex + 1)))
+            {
+                l.setValue("CORRECT!!!");
             }
             else
             {
-                l.setValue("INCORRECT");
+                l.setValue("INCORRECT! Answer was " + correctAnswer);
             }
+            
+            questions.remove(rn);
+            answers.remove(rn);
             
             timeShow.setValue(0);
         }
