@@ -46,7 +46,7 @@ public class Wizard extends Actor
         Hero h = (Hero) getOneObjectAtOffset(200, 0, Hero.class);
         timeShow.add(1);
         
-        if (h != null && timeShow.getValue() > 80)
+        if (h != null && timeShow.getValue() > 80 && !h.doneWizard)
         {
             // Pick random question and get corresponding answer and 
             // possible answers
@@ -85,6 +85,13 @@ public class Wizard extends Actor
             if (ua.equals("" + (correctIndex + 1)))
             {
                 l.setValue("CORRECT!!!");
+                Globals.h.wizCorrect++;
+                if (Globals.h.wizCorrect == 1)
+                {
+                    WizardWorld.dn.flipImage();
+                    Globals.h.doneWizard = true;
+                    getWorld().addObject(new Exit(), getWorld().getWidth() - 40, getWorld().getHeight()/2);
+                }
             }
             else
             {

@@ -9,6 +9,11 @@ public class Hero extends Actor
     boolean doneTyping = false;
     boolean doneBoss = false;
     
+    int fryCount = 0;
+    int wizCorrect = 0;
+    
+    SimpleTimer t = new SimpleTimer();
+    
     public Hero() // constructor - runs as soon as the hero is put into the world
     {
         getImage().scale(40,70);
@@ -39,9 +44,10 @@ public class Hero extends Actor
             setLocation(getX(), getY() - speed);
         }
         
-        else if (Greenfoot.isKeyDown("space"))
+        else if (Greenfoot.isKeyDown("space") && t.millisElapsed() > 100)
         {
             getWorld().addObject(new HeroBullet(), getX(), getY());
+            t.mark();
         }
     }
     
@@ -96,4 +102,21 @@ public class Hero extends Actor
             }    
         }
     }
+    
+    public void resetData()
+    {
+        doneWizard = false;
+        doneFalling = false;
+        doneTyping = false;
+        doneBoss = false;
+    
+        fryCount = 0;
+        wizCorrect = 0;
+        
+        WizardWorld.dn.setNoImage();
+        FallingWorld.dn.setNoImage();
+        BossWorld.dn.setNoImage();
+        TypingWorld.dn.setNoImage();
+    }
+
 }

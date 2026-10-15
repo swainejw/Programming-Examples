@@ -8,4 +8,10 @@ public class HomeWorld extends World
         super(600, 400, 1); 
         addObject(Globals.h, 300, 200);
     }
+    
+    // Ensures that the variables get reset when the user starts again
+    public void started()
+    {
+        Globals.h.resetData();
+    }
 }

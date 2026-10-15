@@ -1,14 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class DoomMonster here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class DoomMonster extends Actor
 {
     int speed = 10;
+    int health = 5;
     SimpleTimer t = new SimpleTimer();
     
     public DoomMonster()

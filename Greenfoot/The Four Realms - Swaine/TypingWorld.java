@@ -3,11 +3,14 @@ import java.util.List;
 
 public class TypingWorld extends World
 {
+    public static DoneOrNot dn = new DoneOrNot();
+    
     public TypingWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         addObject(Globals.h, 300, 350);
+        addObject(dn, 50, 40);
     }
     
     public void act()

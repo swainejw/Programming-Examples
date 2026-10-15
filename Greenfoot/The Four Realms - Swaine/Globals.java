@@ -1,4 +1,4 @@
 public class Globals  
 {
-    public static Hero h = new Hero(); 
+    public static Hero h = new Hero();
 }

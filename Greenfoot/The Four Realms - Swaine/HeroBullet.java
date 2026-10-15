@@ -17,8 +17,14 @@ public class HeroBullet extends Actor
         DoomMonster dm = (DoomMonster) getOneIntersectingObject(DoomMonster.class);
         if (dm != null)
         {
-            getWorld().removeObject(dm);
-            Globals.h.doneBoss = true;   
+            dm.health--;
+            if (dm.health == 0)
+            {
+                Globals.h.doneBoss = true;   
+                BossWorld.dn.flipImage();
+                getWorld().addObject(new Exit(), getWorld().getWidth()/2, getWorld().getHeight() - 25);
+                getWorld().removeObject(dm);
+            }
             getWorld().removeObject(this);
             return;
         }
