@@ -18,7 +18,7 @@ public class DoneOrNot extends Actor
             setImage(no);
             getImage().scale(50, 50);
         }
-        else if (getImage() == no)
+        else
         {
             setImage(yes);
             getImage().scale(50, 50);
