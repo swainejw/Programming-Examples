@@ -20,5 +20,9 @@ public class Hero extends Actor
         {
             setLocation(getX() - 2, getY());
         }
+        if (Greenfoot.isKeyDown("space"))
+        {
+            getWorld().addObject(new Acorn(), getX(), getY());
+        }
     }
 }
