@@ -30,11 +30,11 @@ public class TypingWorld extends World
     {
         List<Letter> letters = getObjects(Letter.class);
     
-        for (Letter letter : letters)
+        for (Letter let : letters)
         {
-            if (letter.isThisLetter(typed))
+            if (let.isThisLetter(typed))
             {
-                removeObject(letter);
+                removeObject(let);
                 break;
             }
         }
@@ -42,7 +42,7 @@ public class TypingWorld extends World
     
     private void spawnLetters()
     {
-        if (Greenfoot.getRandomNumber(50) == 0)
+        if (Greenfoot.getRandomNumber(10) == 0)
         {
             addObject(new Letter(), Greenfoot.getRandomNumber(getWidth()), 0);
         }

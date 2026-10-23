@@ -1,11 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Hero here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Hero extends Actor
 {
     GreenfootImage u1 = new GreenfootImage("up1.png");
@@ -23,14 +17,6 @@ public class Hero extends Actor
         t.mark();
     }
 
-    /**
-     * Act - do whatever the Hero wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    // GreenfootImage u1 = new GreenfootImage("up1.png");
-    // GreenfootImage u2 = new GreenfootImage("up2.png");
-    // GreenfootImage d1 = new GreenfootImage("down1.png");
-    // GreenfootImage d2 = new GreenfootImage("down2.png");
     public void act() 
     {
         if (Greenfoot.isKeyDown("up"))

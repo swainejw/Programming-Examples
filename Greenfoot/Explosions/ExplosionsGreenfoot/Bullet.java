@@ -12,7 +12,7 @@ public class Bullet extends Actor
     {
         getImage().scale(15,15);
     }
-    
+
     /**
      * Act - do whatever the Bullet wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -20,7 +20,7 @@ public class Bullet extends Actor
     public void act() 
     {
         setLocation(getX(), getY() - 10);
-        
+
         Bomb b = (Bomb) getOneIntersectingObject(Bomb.class);
         EnemyBullet eb = (EnemyBullet) getOneIntersectingObject(EnemyBullet.class);
         if (b != null)
@@ -31,16 +31,15 @@ public class Bullet extends Actor
                 // increase the counter value by 10
                 Globals.score.add(10);
                 //System.out.println(getWorld().getObjects(Bomb.class).size());
-                
-                
+
                 getWorld().addObject(new Explosion(), b.getX(), b.getY());
                 getWorld().removeObject(b);
-                
+
                 if (getWorld().getObjects(Bomb.class).size() == 0)
                 {
                     Greenfoot.setWorld(new Level2());
                 }
-                
+
             }
             getWorld().removeObject(this);
         }
@@ -54,6 +53,5 @@ public class Bullet extends Actor
             getWorld().removeObject(this);
         }
     }    
-    
-    
+
 }

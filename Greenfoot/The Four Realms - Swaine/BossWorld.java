@@ -10,6 +10,9 @@ public class BossWorld extends World
         super(600, 400, 1); 
         addObject(Globals.h, 300, 350);
         addObject(dn, 50, 40);
-        addObject(new DoomMonster(), 300, 50);
+        if (Globals.h.doneBoss == false)
+        {
+            addObject(new DoomMonster(), 300, 50);
+        }
     }
 }

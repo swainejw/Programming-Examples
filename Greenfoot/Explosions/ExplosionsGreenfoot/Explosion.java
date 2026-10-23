@@ -35,7 +35,7 @@ public class Explosion extends Actor
     GreenfootImage ex15 = new GreenfootImage("ex15.png");
     
     // Every x milliseconds, the image changes
-    int timeMultiple = 50;
+    int timeMultiple = 500;
     
     /**
      * The constructor plays the sound, sets the first image to image one, and
