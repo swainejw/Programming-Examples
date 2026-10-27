@@ -4,6 +4,11 @@ public class Acorn extends Actor
 {
     public void act()
     {
-        setLocation(getX() + 20, getY());
+        setLocation(getX() + 15, getY());
+        if (getX() > 595)
+        {
+            getWorld().removeObject(this);
+            return;
+        }
     }
 }
