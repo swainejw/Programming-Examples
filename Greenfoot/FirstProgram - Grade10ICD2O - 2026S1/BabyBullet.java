@@ -8,17 +8,17 @@ public class BabyBullet extends Actor
         // move to the left by 15 pixels at a time
         setLocation(getX() - 15, getY());
         
-         // check to see if the acorn hit an EvilBaby
+         // check to see if the BabyBullet hit the Hero
         Hero h = (Hero) getOneIntersectingObject(Hero.class);
         if (h != null) // if it DID...
         {
-            // remove both the acorn and the EvilBaby
+            // remove both the BabyBullet and the Hero
             getWorld().removeObject(h);
             getWorld().removeObject(this);
             return;
         }
         
-        // if the x coordinate of the acorn gets above 595, remove it
+        // if the x coordinate of the acorn gets below 5, remove it
         if (getX() < 5)
         {
             getWorld().removeObject(this);
