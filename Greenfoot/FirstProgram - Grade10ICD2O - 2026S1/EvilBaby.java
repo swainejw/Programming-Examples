@@ -23,7 +23,7 @@ public class EvilBaby extends Actor
         if (timer.millisElapsed() > 1000)
         {
             // add a BabyBullet to the screen at the x,y of the EvilBaby
-            getWorld().addObject(new BabyBullet(), getX(), getY());
+            //getWorld().addObject(new BabyBullet(), getX(), getY());
             
             // reset the timer to 0
             timer.mark();

@@ -11,6 +11,8 @@ public class Acorn extends Actor
         EvilBaby eb = (EvilBaby) getOneIntersectingObject(EvilBaby.class);
         if (eb != null) // if it DID...
         {
+            // increase the counter by 1
+            MyWorld.score.add(1);
             // remove both the acorn and the EvilBaby
             getWorld().removeObject(eb);
             getWorld().removeObject(this);
