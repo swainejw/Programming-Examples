@@ -18,5 +18,6 @@ public class MyWorld extends World
         addObject(new EvilBaby(), 500, 300);
         
         addObject(score, 60, 20);
+        score.setValue(0);
     }
 }

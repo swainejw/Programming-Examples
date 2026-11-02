@@ -13,6 +13,10 @@ public class Acorn extends Actor
         {
             // increase the counter by 1
             MyWorld.score.add(1);
+            if (MyWorld.score.getValue() == 5)
+            {
+                Greenfoot.setWorld(new WinWorld());
+            }
             // remove both the acorn and the EvilBaby
             getWorld().removeObject(eb);
             getWorld().removeObject(this);
