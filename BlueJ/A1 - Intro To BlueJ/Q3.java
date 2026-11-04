@@ -16,5 +16,8 @@ public class Q3
         System.out.println(num1 - num2);
         System.out.println(num1 * num2);
         System.out.println(num1 / num2);
+        
+        double x = Math.sqrt(24);
+        
     }
 }
