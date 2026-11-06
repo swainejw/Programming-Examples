@@ -13,7 +13,7 @@ public class Acorn extends Actor
         {
             // increase the counter by 1
             MyWorld.score.add(1);
-            Greenfoot.playSound("hit.wav");
+            Greenfoot.playSound("go.wav");
             if (MyWorld.score.getValue() == 5)
             {
                 Greenfoot.setWorld(new WinWorld());

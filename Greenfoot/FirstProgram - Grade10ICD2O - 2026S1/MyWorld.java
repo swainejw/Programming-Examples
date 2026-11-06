@@ -14,11 +14,10 @@ public class MyWorld extends World
         // add the hero and the evil baby to the screen
         addObject(h, 50, 200);
         
-        addObject(new Owl(), 550, 40);
-        addObject(new Owl(), 550, 120);
-        addObject(new Owl(), 550, 200);
-        addObject(new Owl(), 550, 280);
-        addObject(new Owl(), 550, 360);
+        for (int x = 0; x < 5; x++)
+        {
+            addObject(new Owl(), 550, 40+80*x);
+        }
         
         for (int x = 0; x < 8; x++)
         {
