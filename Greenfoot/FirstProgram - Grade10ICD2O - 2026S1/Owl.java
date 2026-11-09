@@ -12,6 +12,11 @@ public class Owl extends Actor
     int maxDelay = 12000;
     int randValue = minDelay + Greenfoot.getRandomNumber(maxDelay-minDelay);
     
+    public void started()
+    {
+        timer.mark();
+    }
+    
     public void act()
     {
         // always move vertically by ySpeed

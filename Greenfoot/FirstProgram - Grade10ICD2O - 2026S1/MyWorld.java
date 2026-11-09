@@ -31,6 +31,7 @@ public class MyWorld extends World
         score.setValue(0);
     }
     
+    
     public void act()
     {
         if (t.millisElapsed() > 2000)
