@@ -1,19 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class MyWorld here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class MyWorld extends World
 {
     public static Counter c = new Counter();
     public static HBar hb = new HBar();
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
+    
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -30,17 +21,18 @@ public class MyWorld extends World
     {
         if (Greenfoot.mouseClicked(this))
         {
+            // get the image of the health bar
             GreenfootImage img = hb.getImage();
+            
             int oldWidth = img.getWidth();
-            int newWidth = oldWidth - 10; // example shrink
+            int newWidth = oldWidth - 10; // shrink by 10
 
-            int x = hb.getX();
-            int leftEdge = x - oldWidth / 2; // find left edge before scaling
+            int leftEdge = hb.getX() - oldWidth / 2; // find left edge before scaling
 
             img.scale(newWidth, img.getHeight());
             hb.setImage(img);
 
-            int newX = leftEdge + newWidth / 2; // move actor so left edge stays fixed
+            int newX = leftEdge + (newWidth / 2); // move actor so left edge stays fixed
             hb.setLocation(newX, hb.getY());
         }
 
