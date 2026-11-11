@@ -2,9 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Level2 extends World
 {
-    SimpleTimer t = new SimpleTimer();
-    
-    // set the number of owls and the grid size for the barrier
+    // set the number of condors and the grid size for the barrier
     int numCondors = 5;
     int barrX = 6;
     int barrY = 7;
@@ -14,9 +12,10 @@ public class Level2 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         
-        // add the hero and the evil baby to the screen
+        // add the hero to the screen
         addObject(GameData.h, 50, 200);
         
+        // making two lines of condors
         for (int x = 0; x < numCondors; x++)
         {
             addObject(new Condor(), 550, 40+80*x);
@@ -27,6 +26,7 @@ public class Level2 extends World
             addObject(new Condor(), 450, 40+80*x);
         }
         
+        // make the barrier (smaller for level 2)
         for (int x = 0; x < barrX; x++)
         {
             for (int y = 0; y < barrY; y++)
@@ -35,16 +35,14 @@ public class Level2 extends World
             }
         }
         
+        // Add the score from the GameData class (but don't reset it
+        // because we're on Level2)
         addObject(GameData.score, 60, 20);
     }
     
     
     public void act()
     {
-        if (t.millisElapsed() > 2000)
-        {
-            addObject(new Eagle(), 600, Greenfoot.getRandomNumber(getHeight()));
-            t.mark();
-        }
+        // no eagles on level 2
     }
 }

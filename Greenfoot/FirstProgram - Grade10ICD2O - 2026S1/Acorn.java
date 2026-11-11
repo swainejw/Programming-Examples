@@ -35,10 +35,25 @@ public class Acorn extends Actor
             // if you're on level 2 and the score is 15, you win!
             if (GameData.score.getValue() == 15 && getWorld() instanceof Level2)
             {
-                Greenfoot.setWorld(new WinWorld());
+                Greenfoot.setWorld(new BossLevel());
             }
             // remove both the acorn and the condor
             getWorld().removeObject(co);
+            getWorld().removeObject(this);
+            return;
+        }
+        
+        // check to see if the acorn hit the Boss
+        Boss b = (Boss) getOneIntersectingObject(Boss.class);
+        if (b != null) // if it DID...
+        {
+            GameData.score.add(1); // add to the main score
+            // if you're on level 2 and the score is 15, you win!
+            if (GameData.score.getValue() == 25 && getWorld() instanceof BossLevel)
+            {
+                Greenfoot.setWorld(new WinWorld());
+            }
+            // remove the acorn
             getWorld().removeObject(this);
             return;
         }
