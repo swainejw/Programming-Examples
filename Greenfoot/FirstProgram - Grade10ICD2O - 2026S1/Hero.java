@@ -2,11 +2,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Hero extends Actor
 {
-    // the hero can move by 4 pixels at a time
-    int speed = 4;
-    int shotDelay = 300;
     
-    SimpleTimer timer = new SimpleTimer();
+    int speed = 4; // the hero can move by this pixels at a time
+    int shotDelay = 400; // the hero can only shoot at this interval
+    int health = 3; // the hero has a health of 3
+    public static SimpleTimer t = new SimpleTimer(); // the hero has a timer
     
     public void act()
     {
@@ -31,11 +31,14 @@ public class Hero extends Actor
             // go left 2 pixels
             setLocation(getX() - speed, getY());
         }
-        if (Greenfoot.isKeyDown("space") && timer.millisElapsed() > shotDelay)
+        
+        // shooting
+        if (Greenfoot.isKeyDown("space") && t.millisElapsed() > shotDelay)
         {
             // add an Acorn to the world at the x,y of the Hero
             getWorld().addObject(new Acorn(), getX(), getY());
-            timer.mark();
+            // reset the timer
+            t.mark();
         }
     }
 }

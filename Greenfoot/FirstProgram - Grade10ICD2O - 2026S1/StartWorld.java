@@ -14,7 +14,7 @@ public class StartWorld extends World
     {
         if (Greenfoot.isKeyDown("space"))
         {
-            Greenfoot.setWorld(new MyWorld());
+            Greenfoot.setWorld(new Level1());
         }
     
     }

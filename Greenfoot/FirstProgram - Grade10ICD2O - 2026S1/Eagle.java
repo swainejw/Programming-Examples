@@ -20,7 +20,7 @@ public class Eagle extends Actor
         if (!gotCoords)
         {
             gotCoords = true;
-            turnTowards(MyWorld.h.getX(),MyWorld.h.getY());
+            turnTowards(GameData.h.getX(),GameData.h.getY());
         }
         move(3);
         

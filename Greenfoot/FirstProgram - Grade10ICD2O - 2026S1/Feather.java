@@ -11,8 +11,13 @@ public class Feather extends Actor
         Hero h = (Hero) getOneIntersectingObject(Hero.class);
         if (h != null) // if it DID...
         {
+            h.health--;
+            if (h.health == 0)
+            {
+                getWorld().removeObject(h);
+            }
             // remove both the Feather and the Hero
-            getWorld().removeObject(h);
+            
             getWorld().removeObject(this);
             return;
         }
