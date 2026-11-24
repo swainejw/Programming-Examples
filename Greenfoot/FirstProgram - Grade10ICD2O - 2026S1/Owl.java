@@ -27,6 +27,7 @@ public class Owl extends Actor
         if (getY() < 25 || getY() > 375)
         {
             ySpeed *= -1;
+            setLocation(getX() - 15, getY());
         }
         
         // if the timer gets above 1 second

@@ -5,6 +5,7 @@ public class Mooshroom extends Actor
     public void act()
     {
         setLocation(getX() - 4, getY());
+        turn(57);
         
         Hero h = (Hero) getOneIntersectingObject(Hero.class);
         if (h != null)

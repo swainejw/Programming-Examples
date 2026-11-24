@@ -2,6 +2,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Feather extends Actor
 {
+    
+    
     public void act()
     {
         // move to the left by 9 pixels at a time
